@@ -1,0 +1,140 @@
+.file-browser {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #f5f5f5;
+}
+
+.file-browser-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #e8e8e8;
+  border-bottom: 1px solid #ccc;
+}
+
+.file-browser-toolbar button {
+  padding: 5px 10px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.file-browser-toolbar button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.file-browser-path {
+  flex: 1;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.file-browser-hidden {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.file-browser-content {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.file-browser-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background: white;
+}
+
+.file-browser-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.2s;
+}
+
+.file-browser-item:hover {
+  background: #f0f0f0;
+}
+
+.file-browser-item.selected {
+  background: #e3f2fd;
+}
+
+.file-icon {
+  font-size: 20px;
+  width: 24px;
+  text-align: center;
+}
+
+.file-name {
+  flex: 1;
+  font-size: 13px;
+}
+
+.file-size {
+  font-size: 11px;
+  color: #666;
+}
+
+.file-browser-empty {
+  padding: 20px;
+  text-align: center;
+  color: #999;
+}
+
+.file-browser-preview {
+  width: 400px;
+  border-left: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.file-preview-header {
+  padding: 10px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.file-preview-header span:first-child {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.file-preview-path {
+  font-size: 11px;
+  color: #666;
+  font-family: monospace;
+}
+
+.file-preview-content {
+  flex: 1;
+  overflow: auto;
+  padding: 10px;
+}
+
+.file-preview-content pre {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
